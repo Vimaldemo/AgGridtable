@@ -1,0 +1,115 @@
+.tt-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 16px !important;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+/* HEADER VERTICAL LINE FIX */
+.tt-table th {
+  position: relative;
+}
+
+.tt-table th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0%;
+  width: 1px;
+  height: 80%;
+  background: #d5d5d5;
+}
+
+/* BOTTOM SEPARATOR FOR INPUTS */
+.tt-cell-line {
+  border-bottom: 1px solid #dcdcdc !important;
+  padding-bottom: 6px;
+}
+
+.tt-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tt-table th,
+.tt-table td {
+  border: 1px solid #f1f5f9;
+  padding: 10px;
+}
+
+.tt-table th {
+  background: #f8fafc;
+  font-weight: 700;
+  color: #0f172a;
+}
+.tt-add-row-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.tt-add-button{
+  background: #46494e;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+.tt-add-block-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Aligns to right */
+  margin-top: 15px;
+}
+.tt-submit-button {
+  background: #46494e;
+  color: #fff; 
+  border: none; 
+  padding: 10px 16px; 
+  border-radius: 8px; 
+  margin-top: 12px; 
+  font-size: 16px !important;
+  font-weight: 700; 
+  cursor: pointer; 
+  margin: center;
+}
+.tt-row-delete {
+  background: #46494e;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tt-input-file {
+  padding: 8px;
+  background: #e8d7a7;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.tt-row-delete:hover {
+  background: #c1c5d3; ;
+}
+
+/* INPUT + SELECT */
+.tt-input,
+.tt-select {
+  background: #e7d9b7 !important;
+  border: 1px solid #d8c9a8 !important;
+  color: #2d2d2d !important;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 16px !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 720px) {
+  .tt-table th,
+  .tt-table td {
+    font-size: 14px;
+  }
+}

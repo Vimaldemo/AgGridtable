@@ -1,0 +1,250 @@
+.dt-wrapper {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; 
+  color: #0b1220; 
+  padding: 22px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;             /* remove centering */
+  background: #f6f7fb;
+  box-sizing: border-box; 
+  }
+
+.dt-block { 
+  background: #ffffff; 
+  border-radius: 10px; padding: 20px;
+  margin-bottom: 26px; 
+  box-shadow: 0 6px 18px rgba(11,18,32,0.06); 
+  border: 1px solid #f3f4f6;
+  width:100%
+  }
+
+.dt-table { width: 100%; 
+  border-collapse: separate; 
+  border-spacing: 0; 
+  margin-bottom: 18px; 
+}
+.dt-table th, .dt-table td { 
+  padding: 14px 12px;
+  vertical-align: middle; 
+}
+.dt-table th { 
+  background: #f9fafb;
+  font-weight: 700; 
+  color: #0f172a; 
+  border-bottom: 1px solid #e6eef5; 
+}
+.dt-table td { 
+  border-bottom: 1px solid #f1f5f9; 
+}
+
+.dt-table select, .dt-table input { 
+  width: 100%; 
+  padding: 10px 12px;
+  background: #e7d9b7 !important;
+  border: 1px solid #d8c9a8 !important;
+  color: #2d2d2d !important;
+  border-radius: 8px;  
+  box-sizing: border-box; 
+  font-size: 14px; 
+ }
+.dt-boxes { 
+  display: flex;
+  gap: 20px;
+  margin-top: 20px; 
+  flex-wrap: wrap; 
+  width: 100%;
+}
+.dt-box { flex: 1; 
+  min-width: 260px; 
+  border-radius: 8px; 
+  padding: 15px; 
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.dt-box-heading { 
+  margin: 0 0 12px 0; 
+  font-size: 1rem; 
+  color: #0b1220; 
+  font-weight: 700;
+}
+.dt-box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dt-add-button.small {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.dt-row { display: flex; 
+  gap: 12px; 
+  margin-bottom: 12px; 
+  align-items: center; 
+}
+.dt-row select, .dt-row input { 
+  width: 200px;           /* increase field width */
+  padding: 12px 14px;     /* bigger input height */
+  font-size: 15px;        /* bigger text */
+  border-radius: 8px;
+  border: 1px solid #d8c9a8 ; 
+  background: #e7d9b7 ;
+}
+.dt-table th {
+  position: relative;
+}
+
+.dt-table th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0%;
+  width: 1px;
+  height: 80%;
+  background: #d5d5d5;
+}
+
+.dt-add-button { 
+  background: #46494e;
+  color: #fff; 
+  border: none; 
+  padding: 9px 14px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  font-weight: 600; 
+  transition: background 120ms ease; 
+}
+.dt-add-button[disabled], .dt-add-button[disabled]:hover {
+  background: #c1c5d3; 
+  cursor: not-allowed; 
+}
+.dt-add-button:hover:not([disabled]) { 
+  background: #c1c5d3;
+ }
+
+/* Make the Add Block button look more like a save/primary action (left side in reference) */
+.dt-add-block-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Aligns to right */
+  margin-top: 15px;
+}
+.dt-add-row-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* right side align */
+  margin-top: 10px;
+}
+
+.dt-add-block-button {
+  background: #46494e;
+  color: #fff; 
+  border: none; 
+  padding: 10px 16px; 
+  border-radius: 8px; 
+  margin-top: 12px; 
+  font-size: 16px !important;
+  font-weight: 700; 
+  cursor: pointer; 
+  margin: center;
+}
+.dt-submit-button {
+  background: #46494e;
+  color: #fff; 
+  border: none; 
+  padding: 10px 16px; 
+  border-radius: 8px; 
+  margin-top: 12px; 
+  margin-left: 20px;   /* right side gap */ 
+  font-size: 16px !important;
+  font-weight: 700; 
+  cursor: pointer; 
+  margin: center;
+}
+
+.dt-add-block-button:hover { 
+  background: #c1c5d3; 
+}
+.dt-delete-block-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.dt-delete-block-btn button {
+  background: #46494e;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+.dt-row-delete {
+  background: #46494e;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 6px;
+  background: #46494e;
+  padding: 4px 10px;
+}
+.dt-row-delete:hover
+{
+  opacity: 0.8;
+}
+
+.delete-btn {
+  background: #46494e;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background .12s;
+}
+
+.dt-box input[type="text"] { 
+  background: #e7d9b7;
+  border: 1px solid #d8c9a8;
+  padding: 8px; width: 160px; 
+  border-radius: 6px; 
+}
+.dt-box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dt-title-buttons {
+  display: flex;
+  gap: 10px;   /* Add and Delete gap */
+}
+.dt-block-top {
+  display: flex;
+  justify-content: flex-end;  /* Both buttons to right side */
+  align-items: center;
+  gap: 12px;                  /* space between Delete & Add Row */
+  margin-bottom: 10px;
+}
+
+.dt-block-delete {
+  background: #333;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* responsive */
+@media (max-width: 720px) {
+  .dt-boxes { 
+    flex-direction: column; 
+  }
+  .dt-row { 
+    flex-direction: column; 
+    align-items: stretch; 
+  }
+}
